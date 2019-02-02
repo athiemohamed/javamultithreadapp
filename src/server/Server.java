@@ -90,7 +90,7 @@ public class Server extends Thread {
              System.out.println("Server started !");
            
             while(true){
-                System.out.println("Waiting for new connexion ...");
+                System.out.println("Waiting for new connection ...");
                 Socket con = server.accept();
                 System.out.println("Client connected ...");
                 Thread t = new Server(con);
